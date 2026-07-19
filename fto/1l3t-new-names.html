@@ -26,18 +26,20 @@
         <center><h1>1L3T</h1></center>
         
             <p>This is a proposal for a new naming system for 1L3T (main page <a href="1l3t.html">here</a>).
-            The case name formula has five components:
+            The case name formula has three components:
             <ul>
-            <li>a number for the OLP 1-8 (these numbers can be thought of as 2x the number of middle triangles on top, +1 if the corners are oriented, or +2 if there are flipped corners)</li>
-            <li>a capital letter B/R/L for corner flips (only for OLP 4/6, specifying which side (back/right/left) has the two flipped corners in cases where it's ambiguous)</li>
-            <li>a slash separator</li>
-            <li>a lowercase s/c/a/b/r/l for triangle permutation (solved/clockwise/anticlockwise, back swap/right swap/left swap)</li>
-            <li>a plus/minus/blank for clockwise/anticlockwise/solved corners</li>
+            <li>a letter for the OLP case ("One Look Pairing", analogous to OLL on 3x3. Basically, where all the top face stickers are, with an appropriate AUF to have only one top color triangle per triple, which leads to 12 cases. A mnemonic diagram for these letters is shown below)
+            <li>a letter from S/C/A/B/R/L for triangle permutation (solved/clockwise/anticlockwise; back swap/right swap/left swap; these groups of 3 are even and odd permutations respectively). Since there's one middle layer triangle per triple, these rotations/swaps are thought of at the level of triples, not considering moving triangles from the top to the middle.</li>
+            <li>a plus/minus/blank for clockwise/anticlockwise/solved corners, with respect to the U face edges</li>
             </ul>
+
+            <p><b>OLP Names</b>
+            <p><img height=250 src="olp_diag_1.png"/>
+            <img height=250 src="olp_diag_2.png"/>
             <hr/><input id="compact-view" name="compact-view" type="checkbox" checked/><label for="compact-view"><b>Use compact view</b></label>
 <p><b>Jump to section:</b>
-[<a href="#olp_1_even">1 even</a>][<a href="#olp_1_odd">1 odd</a>][<a href="#olp_2_even">2 even</a>][<a href="#olp_2_odd">2 odd</a>][<a href="#olp_3_even">3 even</a>][<a href="#olp_3_odd">3 odd</a>][<a href="#olp_4B_even">4B even</a>][<a href="#olp_4B_odd">4B odd</a>][<a href="#olp_4R_even">4R even</a>][<a href="#olp_4R_odd">4R odd</a>][<a href="#olp_4L_even">4L even</a>][<a href="#olp_4L_odd">4L odd</a>][<a href="#olp_5_even">5 even</a>][<a href="#olp_5_odd">5 odd</a>][<a href="#olp_6B_even">6B even</a>][<a href="#olp_6B_odd">6B odd</a>][<a href="#olp_6R_even">6R even</a>][<a href="#olp_6R_odd">6R odd</a>][<a href="#olp_6L_even">6L even</a>][<a href="#olp_6L_odd">6L odd</a>][<a href="#olp_7_even">7 even</a>][<a href="#olp_7_odd">7 odd</a>][<a href="#olp_8_even">8 even</a>][<a href="#olp_8_odd">8 odd</a>]  <div id="olp_1_even"></div>
-<label for="cb_1">  <h2>OLP 1 - even</h2>
+[<a href="#olp_O_even">O even</a>][<a href="#olp_O_odd">O odd</a>][<a href="#olp_V_even">V even</a>][<a href="#olp_V_odd">V odd</a>][<a href="#olp_Q_even">Q even</a>][<a href="#olp_Q_odd">Q odd</a>][<a href="#olp_W_even">W even</a>][<a href="#olp_W_odd">W odd</a>][<a href="#olp_J_even">J even</a>][<a href="#olp_J_odd">J odd</a>][<a href="#olp_L_even">L even</a>][<a href="#olp_L_odd">L odd</a>][<a href="#olp_B_even">B even</a>][<a href="#olp_B_odd">B odd</a>][<a href="#olp_T_even">T even</a>][<a href="#olp_T_odd">T odd</a>][<a href="#olp_Z_even">Z even</a>][<a href="#olp_Z_odd">Z odd</a>][<a href="#olp_S_even">S even</a>][<a href="#olp_S_odd">S odd</a>][<a href="#olp_X_even">X even</a>][<a href="#olp_X_odd">X odd</a>][<a href="#olp_Y_even">Y even</a>][<a href="#olp_Y_odd">Y odd</a>]  <div id="olp_O_even"></div>
+<label for="cb_1">  <h2>OLP O - even</h2>
 </label><input type="checkbox" checked id="cb_1" />
   <table>
   <tr>
@@ -206,7 +208,7 @@
 </path>
 </g>
 </svg>
-<br/>1/s</div>
+<br/>OS</div>
 <div><div class="alg">solved</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -373,7 +375,7 @@
 </path>
 </g>
 </svg>
-<br/>1/s+</div>
+<br/>OS+</div>
 <div><div class="alg">{L,F} R' U R' D' R U' R' D R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -540,7 +542,7 @@
 </path>
 </g>
 </svg>
-<br/>1/s-</div>
+<br/>OS-</div>
 <div><div class="alg">{L,F} R D' R U R' D R U' R</div></div></td>
   </tr>
   <tr>
@@ -709,7 +711,7 @@
 </path>
 </g>
 </svg>
-<br/>1/c</div>
+<br/>OC</div>
 <div><div class="alg">{L,F} U' Rs' U' R' U Rs U' R U'</div>
 <div class="alg">{R,F} U' R U Rw' U' R U Rw' U' R U</div></div></td>
 <td>
@@ -877,7 +879,7 @@
 </path>
 </g>
 </svg>
-<br/>1/c+</div>
+<br/>OC+</div>
 <div><div class="alg">L R' L' R' B' R' B</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -1044,7 +1046,7 @@
 </path>
 </g>
 </svg>
-<br/>1/c-</div>
+<br/>OC-</div>
 <div><div class="alg">{B,U} R U' R' U' {U,BL} R D' R U' R' D R'</div></div></td>
   </tr>
   <tr>
@@ -1213,7 +1215,7 @@
 </path>
 </g>
 </svg>
-<br/>1/a</div>
+<br/>OA</div>
 <div><div class="alg">{R,F} U R' U' Rw U R' U' Rw U R' U'</div>
 <div class="alg">{L,F} U R' U Rs' U' R U Rs U</div></div></td>
 <td>
@@ -1381,7 +1383,7 @@
 </path>
 </g>
 </svg>
-<br/>1/a+</div>
+<br/>OA+</div>
 <div><div class="alg">L' B L B {B,U} R' D R' U R D' R</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -1548,12 +1550,12 @@
 </path>
 </g>
 </svg>
-<br/>1/a-</div>
+<br/>OA-</div>
 <div><div class="alg">B' R B R L R L'</div></div></td>
   </tr>
   </table>
-  <div id="olp_1_odd"></div>
-<label for="cb_2">  <h2>OLP 1 - odd</h2>
+  <div id="olp_O_odd"></div>
+<label for="cb_2">  <h2>OLP O - odd</h2>
 </label><input type="checkbox" checked id="cb_2" />
   <table>
   <tr>
@@ -1724,7 +1726,7 @@
 </path>
 </g>
 </svg>
-<br/>1/b</div>
+<br/>OB</div>
 <div><div class="alg">{B,BR} Rw U R' U' Rs' U R U' R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -1891,7 +1893,7 @@
 </path>
 </g>
 </svg>
-<br/>1/b+</div>
+<br/>OB+</div>
 <div><div class="alg">BRw' U R' B L' B' L R U' BRw</div>
 <div class="alg">{BL,F} R' U B' S' B U' R</div></div></td>
 <td>
@@ -2059,12 +2061,12 @@
 </path>
 </g>
 </svg>
-<br/>1/b-</div>
+<br/>OB-</div>
 <div><div class="alg">BLw U' L H' L' U R'</div></div></td>
   </tr>
   </table>
-  <div id="olp_2_even"></div>
-<label for="cb_3">  <h2>OLP 2 - even</h2>
+  <div id="olp_V_even"></div>
+<label for="cb_3">  <h2>OLP V - even</h2>
 </label><input type="checkbox" checked id="cb_3" />
   <table>
   <tr>
@@ -2233,7 +2235,7 @@
 </path>
 </g>
 </svg>
-<br/>2/s</div>
+<br/>VS</div>
 <div><div class="alg">{R,D} D' R' U' H S U R D</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -2400,7 +2402,7 @@
 </path>
 </g>
 </svg>
-<br/>2/s+</div>
+<br/>VS+</div>
 <div><div class="alg">[U] S U S U S U S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -2567,7 +2569,7 @@
 </path>
 </g>
 </svg>
-<br/>2/s-</div>
+<br/>VS-</div>
 <div><div class="alg">[U'] S' U' S' U' S' U' S'</div></div></td>
   </tr>
   <tr>
@@ -2736,7 +2738,7 @@
 </path>
 </g>
 </svg>
-<br/>2/c</div>
+<br/>VC</div>
 <div><div class="alg">[U] S' U S U' S U S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -2903,7 +2905,7 @@
 </path>
 </g>
 </svg>
-<br/>2/c+</div>
+<br/>VC+</div>
 <div><div class="alg">R' U' R' L R L' U R L R' L' B' R B</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -3070,7 +3072,7 @@
 </path>
 </g>
 </svg>
-<br/>2/c-</div>
+<br/>VC-</div>
 <div><div class="alg">[U] B' BLw U S U S U L BLw'</div>
 <div class="alg">[U] S U S U S U H</div></div></td>
   </tr>
@@ -3240,7 +3242,7 @@
 </path>
 </g>
 </svg>
-<br/>2/a</div>
+<br/>VA</div>
 <div><div class="alg">[U'] S U' S' U S' U' S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -3407,7 +3409,7 @@
 </path>
 </g>
 </svg>
-<br/>2/a+</div>
+<br/>VA+</div>
 <div><div class="alg">BLw L' U' S' U' S' U' BLw' B</div>
 <div class="alg">[U'] B BRw' U' S' U' S' U' R' BRw</div>
 <div class="alg">H U' H U' H U' S</div>
@@ -3577,12 +3579,12 @@
 </path>
 </g>
 </svg>
-<br/>2/a-</div>
+<br/>VA-</div>
 <div><div class="alg">L U L R' L' R U' L' R' L R B L' B'</div></div></td>
   </tr>
   </table>
-  <div id="olp_2_odd"></div>
-<label for="cb_4">  <h2>OLP 2 - odd</h2>
+  <div id="olp_V_odd"></div>
+<label for="cb_4">  <h2>OLP V - odd</h2>
 </label><input type="checkbox" checked id="cb_4" />
   <table>
   <tr>
@@ -3753,7 +3755,7 @@
 </path>
 </g>
 </svg>
-<br/>2/b</div>
+<br/>VB</div>
 <div><div class="alg">[U] {U,BR} Rw' L R L' Rw R' U S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -3920,7 +3922,7 @@
 </path>
 </g>
 </svg>
-<br/>2/b+</div>
+<br/>VB+</div>
 <div><div class="alg">[U'] BLw L' U H' U' BLw' B</div>
 <div class="alg">[U] {U,BL} H U' S U S</div></div></td>
 <td>
@@ -4088,13 +4090,13 @@
 </path>
 </g>
 </svg>
-<br/>2/b-</div>
+<br/>VB-</div>
 <div><div class="alg">B' BLw U H U' L BLw'</div>
 <div class="alg">[U'] S U H U' H</div></div></td>
   </tr>
   </table>
-  <div id="olp_3_even"></div>
-<label for="cb_5">  <h2>OLP 3 - even</h2>
+  <div id="olp_Q_even"></div>
+<label for="cb_5">  <h2>OLP Q - even</h2>
 </label><input type="checkbox" checked id="cb_5" />
   <table>
   <tr>
@@ -4263,7 +4265,7 @@
 </path>
 </g>
 </svg>
-<br/>3/s</div>
+<br/>QS</div>
 <div><div class="alg">[U] {L,F} R U R' U' Rw R' U R U' Rw'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -4430,7 +4432,7 @@
 </path>
 </g>
 </svg>
-<br/>3/s+</div>
+<br/>QS+</div>
 <div><div class="alg">[U'] {U,BR} H U' S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -4597,7 +4599,7 @@
 </path>
 </g>
 </svg>
-<br/>3/s-</div>
+<br/>QS-</div>
 <div><div class="alg">[U] {U,BR} S U H'</div></div></td>
   </tr>
   <tr>
@@ -4766,7 +4768,7 @@
 </path>
 </g>
 </svg>
-<br/>3/c</div>
+<br/>QC</div>
 <div><div class="alg">[U] H' U S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -4933,7 +4935,7 @@
 </path>
 </g>
 </svg>
-<br/>3/c+</div>
+<br/>QC+</div>
 <div><div class="alg">[U'] {B,U} U' R' D R' U R D' R U' R U R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -5100,7 +5102,7 @@
 </path>
 </g>
 </svg>
-<br/>3/c-</div>
+<br/>QC-</div>
 <div><div class="alg">[U'] {U,BR} S U' S</div></div></td>
   </tr>
   <tr>
@@ -5269,7 +5271,7 @@
 </path>
 </g>
 </svg>
-<br/>3/a</div>
+<br/>QA</div>
 <div><div class="alg">[U'] {U,BR}S U' H</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -5436,7 +5438,7 @@
 </path>
 </g>
 </svg>
-<br/>3/a+</div>
+<br/>QA+</div>
 <div><div class="alg">[U] {U,BL} S' U S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -5603,12 +5605,12 @@
 </path>
 </g>
 </svg>
-<br/>3/a-</div>
+<br/>QA-</div>
 <div><div class="alg">[U] {L,U} R U' R' U R' D R' U' R D' R U</div></div></td>
   </tr>
   </table>
-  <div id="olp_3_odd"></div>
-<label for="cb_6">  <h2>OLP 3 - odd</h2>
+  <div id="olp_Q_odd"></div>
+<label for="cb_6">  <h2>OLP Q - odd</h2>
 </label><input type="checkbox" checked id="cb_6" />
   <table>
   <tr>
@@ -5779,7 +5781,7 @@
 </path>
 </g>
 </svg>
-<br/>3/b</div>
+<br/>QB</div>
 <div><div class="alg">[U] {R,U} U' R BR' U R' U' R BR' U R' U' R BR' U R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -5946,7 +5948,7 @@
 </path>
 </g>
 </svg>
-<br/>3/b+</div>
+<br/>QB+</div>
 <div><div class="alg">{B,U} U R BR' R' U' R U BR R' U'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -6113,7 +6115,7 @@
 </path>
 </g>
 </svg>
-<br/>3/b-</div>
+<br/>QB-</div>
 <div><div class="alg">{R,D} R U R' U Rw BR Rw' U R U' R'</div></div></td>
   </tr>
   <tr>
@@ -6282,7 +6284,7 @@
 </path>
 </g>
 </svg>
-<br/>3/r</div>
+<br/>QR</div>
 <div><div class="alg">[U] {R,U} U R Rw' U' R U R' Rw U' R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -6449,7 +6451,7 @@
 </path>
 </g>
 </svg>
-<br/>3/r+</div>
+<br/>QR+</div>
 <div><div class="alg">{U,BL} S U S' U S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -6616,7 +6618,7 @@
 </path>
 </g>
 </svg>
-<br/>3/r-</div>
+<br/>QR-</div>
 <div><div class="alg">S U' L Rw' R L' R' L Rw L'</div></div></td>
   </tr>
   <tr>
@@ -6785,7 +6787,7 @@
 </path>
 </g>
 </svg>
-<br/>3/l</div>
+<br/>QL</div>
 <div><div class="alg">[U'] {L,U} R U Rw' R U' R' U Rw R' U'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -6952,7 +6954,7 @@
 </path>
 </g>
 </svg>
-<br/>3/l+</div>
+<br/>QL+</div>
 <div><div class="alg">[U] {B,BL} U Rw' U' R U R' Rw U' BR U R' U' R</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -7119,12 +7121,12 @@
 </path>
 </g>
 </svg>
-<br/>3/l-</div>
+<br/>QL-</div>
 <div><div class="alg">{U,BR} S' U' S U' S'</div></div></td>
   </tr>
   </table>
-  <div id="olp_4B_even"></div>
-<label for="cb_7">  <h2>OLP 4B - even</h2>
+  <div id="olp_W_even"></div>
+<label for="cb_7">  <h2>OLP W - even</h2>
 </label><input type="checkbox" checked id="cb_7" />
   <table>
   <tr>
@@ -7293,7 +7295,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/s</div>
+<br/>WS</div>
 <div><div class="alg">[U'] {L,U} R U' BR Rw' R U R' U' Rw BR' R' U</div>
 <div class="alg">[U'] {B,BL} Rw' U R U' R' Rw BR Rw' R U R' U' Rw</div>
 <div class="alg">{F,BL} R' BR' R B' R' B R' L R L' BR R</div>
@@ -7463,7 +7465,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/s+</div>
+<br/>WS+</div>
 <div><div class="alg">[U] {B,L} Rw U' Rw' R BR R' Rw U Rw' R BR'</div>
 <div class="alg"> H U' S U' S</div></div></td>
 <td>
@@ -7631,7 +7633,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/s-</div>
+<br/>WS-</div>
 <div><div class="alg">[U] {L,U} R' D' R U' R' D R U</div>
 <div class="alg">[U] {R,BR} U R D R' U' R D' R'</div></div></td>
   </tr>
@@ -7801,7 +7803,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/c</div>
+<br/>WC</div>
 <div><div class="alg">{R,U} Rw' R U' R' D R' U R D' Rw</div>
 <div class="alg">{U,BR} S' U S' U S'</div></div></td>
 <td>
@@ -7969,7 +7971,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/c+</div>
+<br/>WC+</div>
 <div><div class="alg">[U] {BL,F} B R' U R' L R L' U' B' R</div>
 <div class="alg">[U'] L R' L' R U' R Rw' U' R B' R' B U Rw R'</div></div></td>
 <td>
@@ -8137,7 +8139,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/c-</div>
+<br/>WC-</div>
 <div><div class="alg">{U,BR} S' U' S' U' H'</div>
 <div class="alg"> H U' S U' H</div></div></td>
   </tr>
@@ -8307,7 +8309,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/a</div>
+<br/>WA</div>
 <div><div class="alg">[U'] {L,F} Rw D R' U R D' R U' Rw' R'</div>
 <div class="alg">H U' H U' S'</div>
 <div class="alg">S U' H' U' H'</div></div></td>
@@ -8476,7 +8478,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/a+</div>
+<br/>WA+</div>
 <div><div class="alg">[U'] {U,BL} H U S U S</div>
 <div class="alg">H U S U H'</div>
 <div class="alg">S U H' U S'</div>
@@ -8646,12 +8648,12 @@
 </path>
 </g>
 </svg>
-<br/>4B/a-</div>
+<br/>WA-</div>
 <div><div class="alg">[U] {F,BR} R' B U L R' L' R U' R B'</div></div></td>
   </tr>
   </table>
-  <div id="olp_4B_odd"></div>
-<label for="cb_8">  <h2>OLP 4B - odd</h2>
+  <div id="olp_W_odd"></div>
+<label for="cb_8">  <h2>OLP W - odd</h2>
 </label><input type="checkbox" checked id="cb_8" />
   <table>
   <tr>
@@ -8822,7 +8824,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/b</div>
+<br/>WB</div>
 <div><div class="alg">R' U R B' R B R' L R' L' U' R</div>
 <div class="alg">R' U L R L' R B' R' B R' U' R</div>
 <div class="alg">{F,BL} B' Rw B' R' B R' L R L' R Rw' B</div></div></td>
@@ -8991,7 +8993,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/b+</div>
+<br/>WB+</div>
 <div><div class="alg">[U] {U,BR} S' U H</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -9158,7 +9160,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/b-</div>
+<br/>WB-</div>
 <div><div class="alg">[U] {R,U} U' Rs U R U' Rw' U</div>
 <div class="alg">[U'] Rs' U' S' U Rs</div></div></td>
   </tr>
@@ -9328,7 +9330,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/r</div>
+<br/>WR</div>
 <div><div class="alg">[U] S U S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -9495,7 +9497,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/r+</div>
+<br/>WR+</div>
 <div><div class="alg">[U] {L,BL} U R' D R U R' D' R U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -9662,7 +9664,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/r-</div>
+<br/>WR-</div>
 <div><div class="alg">[U'] {B,U} U' R BR' U R' U' R BR U R'</div></div></td>
   </tr>
   <tr>
@@ -9831,7 +9833,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/l</div>
+<br/>WL</div>
 <div><div class="alg">[U] {R,BR} L R' U R D' R U' R' D L'</div>
 <div class="alg">[U] {L,U} BR' D' R U' R' D R' U R BR</div>
 <div class="alg">[U] {R,B} U' R' BR Rw' U' R U' Rw BR U</div>
@@ -10001,7 +10003,7 @@
 </path>
 </g>
 </svg>
-<br/>4B/l+</div>
+<br/>WL+</div>
 <div><div class="alg">[U'] {R,U} R U' BR' R' U R U' BR R' U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -10168,12 +10170,12 @@
 </path>
 </g>
 </svg>
-<br/>4B/l-</div>
+<br/>WL-</div>
 <div><div class="alg">[U] {U,BL} H' U S</div></div></td>
   </tr>
   </table>
-  <div id="olp_4R_even"></div>
-<label for="cb_9">  <h2>OLP 4R - even</h2>
+  <div id="olp_J_even"></div>
+<label for="cb_9">  <h2>OLP J - even</h2>
 </label><input type="checkbox" checked id="cb_9" />
   <table>
   <tr>
@@ -10344,7 +10346,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/s</div>
+<br/>JS</div>
 <div><div class="alg">[U] {L,U} U' R BR Rw' U R U' Rw R' BR' U R'</div>
 <div class="alg"> R' U' L' R B' R B R' L R' U R</div>
 <div class="alg"> D Rw R B' R' B R' L R L' Rw' D'</div></div></td>
@@ -10513,7 +10515,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/s+</div>
+<br/>JS+</div>
 <div><div class="alg">[U'] {L,U} U' R' D' R U R' D R</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -10680,7 +10682,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/s-</div>
+<br/>JS-</div>
 <div><div class="alg">{U,BL} S U H U H</div>
 <div class="alg">[U'] {B,L} BR R' Rw U' Rw' R BR' R' Rw U Rw'</div></div></td>
   </tr>
@@ -10850,7 +10852,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/c</div>
+<br/>JC</div>
 <div><div class="alg">[U] {R,U} Rw' D' R U' R' D R' U R Rw</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -11017,7 +11019,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/c+</div>
+<br/>JC+</div>
 <div><div class="alg">[U'] {U,BL} BLw L' U' H' U BLw' B</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -11184,7 +11186,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/c-</div>
+<br/>JC-</div>
 <div><div class="alg">[U] S U' H U' H</div></div></td>
   </tr>
   <tr>
@@ -11353,7 +11355,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/a</div>
+<br/>JA</div>
 <div><div class="alg">{L,F} Rw R' U R D' R U' R' D Rw'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -11520,7 +11522,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/a+</div>
+<br/>JA+</div>
 <div><div class="alg">{R,U} U' R U Rw' U' R' D R' U R D' Rw</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -11687,12 +11689,12 @@
 </path>
 </g>
 </svg>
-<br/>4R/a-</div>
+<br/>JA-</div>
 <div><div class="alg">[U'] B' BLw U' H U L BLw'</div></div></td>
   </tr>
   </table>
-  <div id="olp_4R_odd"></div>
-<label for="cb_10">  <h2>OLP 4R - odd</h2>
+  <div id="olp_J_odd"></div>
+<label for="cb_10">  <h2>OLP J - odd</h2>
 </label><input type="checkbox" checked id="cb_10" />
   <table>
   <tr>
@@ -11863,7 +11865,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/b</div>
+<br/>JB</div>
 <div><div class="alg">{U,BL} R U' R' L R' L' R B' R B U R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -12030,7 +12032,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/b+</div>
+<br/>JB+</div>
 <div><div class="alg">[U'] {L,F} U Rw' R U' R' U Rw U'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -12197,7 +12199,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/b-</div>
+<br/>JB-</div>
 <div><div class="alg">[U'] {U,BR} H' U' S</div></div></td>
   </tr>
   <tr>
@@ -12366,7 +12368,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/r</div>
+<br/>JR</div>
 <div><div class="alg">[U'] {B,BL} L' D' R U R' D R' U' R L</div>
 <div class="alg">[U'] L U R' D R U' R D' R' L'</div>
 <div class="alg">[U'] {B,D} U' Rw' BR' Rw B' Rw U Rw' B U</div>
@@ -12536,7 +12538,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/r+</div>
+<br/>JR+</div>
 <div><div class="alg">[U'] S' U' H</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -12703,7 +12705,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/r-</div>
+<br/>JR-</div>
 <div><div class="alg">[U] {R,U} U' R BR U R' U' R BR' U R'</div></div></td>
   </tr>
   <tr>
@@ -12872,7 +12874,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/l</div>
+<br/>JL</div>
 <div><div class="alg">[U'] S' U' S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -13039,7 +13041,7 @@
 </path>
 </g>
 </svg>
-<br/>4R/l+</div>
+<br/>JL+</div>
 <div><div class="alg">[U] {L,U} R U' BR R' U R U' BR' R' U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -13206,12 +13208,12 @@
 </path>
 </g>
 </svg>
-<br/>4R/l-</div>
+<br/>JL-</div>
 <div><div class="alg">[U'] {R,F} U' R D' R' U' R D R' U'</div></div></td>
   </tr>
   </table>
-  <div id="olp_4L_even"></div>
-<label for="cb_11">  <h2>OLP 4L - even</h2>
+  <div id="olp_L_even"></div>
+<label for="cb_11">  <h2>OLP L - even</h2>
 </label><input type="checkbox" checked id="cb_11" />
   <table>
   <tr>
@@ -13382,7 +13384,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/s</div>
+<br/>LS</div>
 <div><div class="alg">[U] S' U H U' {U,BL} S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -13549,7 +13551,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/s+</div>
+<br/>LS+</div>
 <div><div class="alg">[U] {B,U} BR' R' U' R D R' U R D' BR</div>
 <div class="alg">[U] {BR,U} U' R' U' R D R' U R D' U</div></div></td>
 <td>
@@ -13717,7 +13719,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/s-</div>
+<br/>LS-</div>
 <div><div class="alg">[U'] {BL,F} U R U R' D' R U' R' U' D</div>
 <div class="alg">[U'] {F,U} BR R D R' U' R D' R' U BR'</div></div></td>
   </tr>
@@ -13887,7 +13889,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/c</div>
+<br/>LC</div>
 <div><div class="alg">[U'] {B,U} R U' R' U R U' BR' R' U R U' BR R' U</div>
 <div class="alg">[U'] {B,U} U' R U R' U' R BR' R' U R U' BR R' U</div>
 <div class="alg">[U'] {R,U} U' R U R' U' R BR' U R' U' R BR U R'</div>
@@ -14057,7 +14059,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/c+</div>
+<br/>LC+</div>
 <div><div class="alg">[U'] S U' S' U S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -14224,7 +14226,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/c-</div>
+<br/>LC-</div>
 <div><div class="alg">[U'] Rw' L R L' U' B' R B R' U Rw R'</div>
 <div class="alg">[U] {F,U} R L' R B' R' B U L R' L' R U' L R'</div>
 <div class="alg">[U'] {L,U} R U' BR R' U R U' BR' Rw' R U R' U' Rw R' U</div>
@@ -14396,7 +14398,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/a</div>
+<br/>LA</div>
 <div><div class="alg">[U] {R,U} R U' R' U R U' BR R' U R U' BR' R' U</div>
 <div class="alg">[U] {L,U} R U' R' U R U' BR U R' U' R BR' U R'</div>
 <div class="alg">[U] {L,U} U' R U R' U' R BR U R' U' R BR' U R'</div>
@@ -14567,7 +14569,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/a+</div>
+<br/>LA+</div>
 <div><div class="alg">[U] {U,BL} Rw B' R' B U S' U' Rs'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -14734,12 +14736,12 @@
 </path>
 </g>
 </svg>
-<br/>4L/a-</div>
+<br/>LA-</div>
 <div><div class="alg">[U] S' U S U' S'</div></div></td>
   </tr>
   </table>
-  <div id="olp_4L_odd"></div>
-<label for="cb_12">  <h2>OLP 4L - odd</h2>
+  <div id="olp_L_odd"></div>
+<label for="cb_12">  <h2>OLP L - odd</h2>
 </label><input type="checkbox" checked id="cb_12" />
   <table>
   <tr>
@@ -14910,7 +14912,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/b</div>
+<br/>LB</div>
 <div><div class="alg">[U'] H' U S U S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -15077,7 +15079,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/b+</div>
+<br/>LB+</div>
 <div><div class="alg">[U'] {U,BR} BR' R U' S' U R' BR</div>
 <div class="alg">[U'] {R,BR} D' R BR' U R' U' R BR R' D</div>
 <div class="alg">[U] {L,BL} D R' BR U' R' U R BR' R D'</div>
@@ -15247,7 +15249,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/b-</div>
+<br/>LB-</div>
 <div><div class="alg">[U] {U,BL} BL L' U S U' L BL'</div>
 <div class="alg">[U] {R,U} Rw U' BR R' U R U' BR' U Rw'</div>
 <div class="alg">{L,F} Rw' R BR' Rw' R U R' U' Rw BR Rw R'</div></div></td>
@@ -15418,7 +15420,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/r</div>
+<br/>LR</div>
 <div><div class="alg">[U] {B,U} U' Rw' R' U R D' R U' R' D Rw U</div>
 <div class="alg">[U] {R,U} U' R U R' Rw U BR U' R' U R BR' U' Rw'</div>
 <div class="alg">[U] {L,F} Rw' R U' R' U Rw U BR R' U' R U BR' U'</div>
@@ -15588,7 +15590,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/r+</div>
+<br/>LR+</div>
 <div><div class="alg">{U,BL} Rs' U S' U' L R' L' Rw</div>
 <div class="alg">{U,BL} R Rw' U L R' L' R U' L R' L' Rw</div>
 <div class="alg">[U] {L,BL} U R' U R U Rw' D' U R' U' R D</div></div></td>
@@ -15757,7 +15759,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/r-</div>
+<br/>LR-</div>
 <div><div class="alg">[U] {U,BR} S U' S' U' S'</div></div></td>
   </tr>
   <tr>
@@ -15926,7 +15928,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/l</div>
+<br/>LL</div>
 <div><div class="alg">[U] Rs' L R' L' Rw U' Rw' L R L' Rs</div>
 <div class="alg">[U] {L,F} Rw' R U R' U' Rw BR' Rw' U R U' Rw R'</div>
 <div class="alg">{B,U} Rw R' U' R BR' R' U R U' BR U Rw'</div></div></td>
@@ -16095,7 +16097,7 @@
 </path>
 </g>
 </svg>
-<br/>4L/l+</div>
+<br/>LL+</div>
 <div><div class="alg">[U'] {U,BL} S' U S U S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -16262,13 +16264,13 @@
 </path>
 </g>
 </svg>
-<br/>4L/l-</div>
+<br/>LL-</div>
 <div><div class="alg">Rs U' H' U B' R B Rw'</div>
 <div class="alg"> Rw R' U' B' R B R' U B' R B Rw'</div></div></td>
   </tr>
   </table>
-  <div id="olp_5_even"></div>
-<label for="cb_13">  <h2>OLP 5 - even</h2>
+  <div id="olp_B_even"></div>
+<label for="cb_13">  <h2>OLP B - even</h2>
 </label><input type="checkbox" checked id="cb_13" />
   <table>
   <tr>
@@ -16437,7 +16439,7 @@
 </path>
 </g>
 </svg>
-<br/>5/s</div>
+<br/>BS</div>
 <div><div class="alg">[U] H U H U' S U' S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -16604,7 +16606,7 @@
 </path>
 </g>
 </svg>
-<br/>5/s+</div>
+<br/>BS+</div>
 <div><div class="alg">[U] {U,BL} S U S U H</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -16771,7 +16773,7 @@
 </path>
 </g>
 </svg>
-<br/>5/s-</div>
+<br/>BS-</div>
 <div><div class="alg">[U'] H U' H U' S</div></div></td>
   </tr>
   <tr>
@@ -16940,7 +16942,7 @@
 </path>
 </g>
 </svg>
-<br/>5/c</div>
+<br/>BC</div>
 <div><div class="alg">[U'] {U,BR} S' U' S' U' S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -17107,7 +17109,7 @@
 </path>
 </g>
 </svg>
-<br/>5/c+</div>
+<br/>BC+</div>
 <div><div class="alg">[U] {F,U} U' BLw' U' R L R' L' U BLw U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -17274,7 +17276,7 @@
 </path>
 </g>
 </svg>
-<br/>5/c-</div>
+<br/>BC-</div>
 <div><div class="alg">[U] {U,BL} S U H U S'</div></div></td>
   </tr>
   <tr>
@@ -17443,7 +17445,7 @@
 </path>
 </g>
 </svg>
-<br/>5/a</div>
+<br/>BA</div>
 <div><div class="alg">[U] {U,BL} S U S U S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -17610,7 +17612,7 @@
 </path>
 </g>
 </svg>
-<br/>5/a+</div>
+<br/>BA+</div>
 <div><div class="alg">[U] S' U Rw R' L R' L' Rw' R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -17777,12 +17779,12 @@
 </path>
 </g>
 </svg>
-<br/>5/a-</div>
+<br/>BA-</div>
 <div><div class="alg">[U] {BR,U} U' BLw' U' L R L' R' U BLw U</div></div></td>
   </tr>
   </table>
-  <div id="olp_5_odd"></div>
-<label for="cb_14">  <h2>OLP 5 - odd</h2>
+  <div id="olp_B_odd"></div>
+<label for="cb_14">  <h2>OLP B - odd</h2>
 </label><input type="checkbox" checked id="cb_14" />
   <table>
   <tr>
@@ -17953,7 +17955,7 @@
 </path>
 </g>
 </svg>
-<br/>5/b</div>
+<br/>BB</div>
 <div><div class="alg">S' U' H U S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -18120,7 +18122,7 @@
 </path>
 </g>
 </svg>
-<br/>5/b+</div>
+<br/>BB+</div>
 <div><div class="alg">[U] {U,BL} BR' R' U' Rw L R' L' R Rw' U R BR</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -18287,7 +18289,7 @@
 </path>
 </g>
 </svg>
-<br/>5/b-</div>
+<br/>BB-</div>
 <div><div class="alg">S U Rw' R B' R B Rw R</div></div></td>
   </tr>
   <tr>
@@ -18456,7 +18458,7 @@
 </path>
 </g>
 </svg>
-<br/>5/r</div>
+<br/>BR</div>
 <div><div class="alg">[U'] BLw L' U B L' B' L U' BLw' B</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -18623,7 +18625,7 @@
 </path>
 </g>
 </svg>
-<br/>5/r+</div>
+<br/>BR+</div>
 <div><div class="alg">{U,BL} B' BLw U S' U' BLw' B</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -18790,7 +18792,7 @@
 </path>
 </g>
 </svg>
-<br/>5/r-</div>
+<br/>BR-</div>
 <div><div class="alg">[U] {U,BR} S' U' S' U S</div></div></td>
   </tr>
   <tr>
@@ -18959,7 +18961,7 @@
 </path>
 </g>
 </svg>
-<br/>5/l</div>
+<br/>BL</div>
 <div><div class="alg">BLw' B U S U' BLw L'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -19126,7 +19128,7 @@
 </path>
 </g>
 </svg>
-<br/>5/l+</div>
+<br/>BL+</div>
 <div><div class="alg">S' U' S U S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -19293,12 +19295,12 @@
 </path>
 </g>
 </svg>
-<br/>5/l-</div>
+<br/>BL-</div>
 <div><div class="alg">[U'] {U,BR} B' BLw U S U' BLw' B</div></div></td>
   </tr>
   </table>
-  <div id="olp_6B_even"></div>
-<label for="cb_15">  <h2>OLP 6B - even</h2>
+  <div id="olp_T_even"></div>
+<label for="cb_15">  <h2>OLP T - even</h2>
 </label><input type="checkbox" checked id="cb_15" />
   <table>
   <tr>
@@ -19467,7 +19469,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/s</div>
+<br/>TS</div>
 <div><div class="alg">[U'] {L,U} U' R U R D' R U' R' D R U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -19634,7 +19636,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/s+</div>
+<br/>TS+</div>
 <div><div class="alg">[U] {B,U} R U BR R BR' U BR R' BR' R' U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -19801,7 +19803,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/s-</div>
+<br/>TS-</div>
 <div><div class="alg">[U] {U,BR} H U' S' U S</div>
 <div class="alg">[U'] {L,BL} U' D R U R Rw' U R' U' R' Rw D'</div></div></td>
   </tr>
@@ -19971,7 +19973,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/c</div>
+<br/>TC</div>
 <div><div class="alg">{B,U} U' R BR U R' F' R U' BR U R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -20138,7 +20140,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/c+</div>
+<br/>TC+</div>
 <div><div class="alg">[U] {U,BL} L BL' U S' U' BL L'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -20305,7 +20307,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/c-</div>
+<br/>TC-</div>
 <div><div class="alg">[U'] {B,U} R U' BR R' U R U' BR' U R'</div>
 <div class="alg">[U] {B,U} U' R BR' R' U R U' BR R' U</div></div></td>
   </tr>
@@ -20475,7 +20477,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/a</div>
+<br/>TA</div>
 <div><div class="alg">[U] L BLw' U' S' U B' R</div>
 <div class="alg">[U'] BLw L' U H U' R' L</div></div></td>
 <td>
@@ -20643,7 +20645,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/a+</div>
+<br/>TA+</div>
 <div><div class="alg">[U'] {B,L} U' R' BR Rw' U' R' U' Rw BR R' U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -20810,12 +20812,12 @@
 </path>
 </g>
 </svg>
-<br/>6B/a-</div>
+<br/>TA-</div>
 <div><div class="alg">[U'] {U,BR} R B' BR' R' BR B R' U R</div></div></td>
   </tr>
   </table>
-  <div id="olp_6B_odd"></div>
-<label for="cb_16">  <h2>OLP 6B - odd</h2>
+  <div id="olp_T_odd"></div>
+<label for="cb_16">  <h2>OLP T - odd</h2>
 </label><input type="checkbox" checked id="cb_16" />
   <table>
   <tr>
@@ -20986,7 +20988,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/b</div>
+<br/>TB</div>
 <div><div class="alg">{R,U} U' R BR' R' U R U' BR U R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -21153,7 +21155,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/b+</div>
+<br/>TB+</div>
 <div><div class="alg">[U'] {BL,BR} B' R' U' L' R' L R U R B</div>
 <div class="alg">[U'] {B,L} U' Rw R' BR U BR' U' Rw' R U</div>
 <div class="alg">[U'] {B,U} R U' R' U' Rw' U' R' U' R U' Rw U'</div></div></td>
@@ -21322,7 +21324,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/b-</div>
+<br/>TB-</div>
 <div><div class="alg">[U'] S U S</div></div></td>
   </tr>
   <tr>
@@ -21491,7 +21493,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/r</div>
+<br/>TR</div>
 <div><div class="alg">[U'] {U,BR} S U S U' S</div>
 <div class="alg">[U'] {L,U} L' U L Rw' U' R' U' R U' Rw U'</div></div></td>
 <td>
@@ -21659,7 +21661,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/r+</div>
+<br/>TR+</div>
 <div><div class="alg">[U'] H U S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -21826,7 +21828,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/r-</div>
+<br/>TR-</div>
 <div><div class="alg">[U'] {U,BL} Rs L R' L' Rw2 R'</div></div></td>
   </tr>
   <tr>
@@ -21995,7 +21997,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/l</div>
+<br/>TL</div>
 <div><div class="alg">[U'] S U H</div>
 <div class="alg">[U'] {U,BR} S' U H'</div></div></td>
 <td>
@@ -22163,7 +22165,7 @@
 </path>
 </g>
 </svg>
-<br/>6B/l+</div>
+<br/>TL+</div>
 <div><div class="alg">{U,BL} L BLw' U' S' U BLw L'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -22330,12 +22332,12 @@
 </path>
 </g>
 </svg>
-<br/>6B/l-</div>
+<br/>TL-</div>
 <div><div class="alg">[U'] {BR,U} U R U' R' L' R L U R' U'</div></div></td>
   </tr>
   </table>
-  <div id="olp_6R_even"></div>
-<label for="cb_17">  <h2>OLP 6R - even</h2>
+  <div id="olp_Z_even"></div>
+<label for="cb_17">  <h2>OLP Z - even</h2>
 </label><input type="checkbox" checked id="cb_17" />
   <table>
   <tr>
@@ -22506,7 +22508,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/s</div>
+<br/>ZS</div>
 <div><div class="alg">[U] {R,BR} U R' U' R' D R' U R D' R' U'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -22673,7 +22675,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/s+</div>
+<br/>ZS+</div>
 <div><div class="alg">[U'] H' U S' U' S</div>
 <div class="alg">{R,F} D' U R' U' R' Rw U' R U R Rw' D</div>
 <div class="alg">{R,U} U Rw' U BR' R' U R U' BR U' Rw U'</div></div></td>
@@ -22842,7 +22844,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/s-</div>
+<br/>ZS-</div>
 <div><div class="alg">{BR,U} Rw' B R' U R' L' R L U' R B' Rw</div></div></td>
   </tr>
   <tr>
@@ -23011,7 +23013,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/c</div>
+<br/>ZC</div>
 <div><div class="alg">[U] {U,BL} BLw' B U' S U BLw L'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -23178,7 +23180,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/c+</div>
+<br/>ZC+</div>
 <div><div class="alg">[U] {U,BR} BLw' B U R U' B' BLw BR' R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -23345,7 +23347,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/c-</div>
+<br/>ZC-</div>
 <div><div class="alg">[U] {BL,U} U' R' L' U S' U' L R U</div></div></td>
   </tr>
   <tr>
@@ -23514,7 +23516,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/a</div>
+<br/>ZA</div>
 <div><div class="alg">{L,U} R U' BR' R' U F U' R BR' R' U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -23681,7 +23683,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/a+</div>
+<br/>ZA+</div>
 <div><div class="alg">[U] {L,U} U' R BR' U R' U' R BR R' U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -23848,12 +23850,12 @@
 </path>
 </g>
 </svg>
-<br/>6R/a-</div>
+<br/>ZA-</div>
 <div><div class="alg">[U'] {U,BR} R' BR U' S U BR' R</div></div></td>
   </tr>
   </table>
-  <div id="olp_6R_odd"></div>
-<label for="cb_18">  <h2>OLP 6R - odd</h2>
+  <div id="olp_Z_odd"></div>
+<label for="cb_18">  <h2>OLP Z - odd</h2>
 </label><input type="checkbox" checked id="cb_18" />
   <table>
   <tr>
@@ -24024,7 +24026,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/b</div>
+<br/>ZB</div>
 <div><div class="alg">{U,BL} BLw L' U S' U' BLw' B</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -24191,7 +24193,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/b+</div>
+<br/>ZB+</div>
 <div><div class="alg">[U] S' U' S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -24358,7 +24360,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/b-</div>
+<br/>ZB-</div>
 <div><div class="alg">[U] {BR,F} L R U B R B' R' U' R' L' </div>
 <div class="alg">[U] {L,F} U R' U' R BR' U R D' R U' R' D R'</div></div></td>
   </tr>
@@ -24528,7 +24530,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/r</div>
+<br/>ZR</div>
 <div><div class="alg">{U,BR} H' U' S' </div>
 <div class="alg">{U,BL} H U' S</div></div></td>
 <td>
@@ -24696,7 +24698,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/r+</div>
+<br/>ZR+</div>
 <div><div class="alg">[U] {BL,F} U' R' U R B R' B' U' R U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -24863,7 +24865,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/r-</div>
+<br/>ZR-</div>
 <div><div class="alg">B' BLw U H' U' BLw' B</div></div></td>
   </tr>
   <tr>
@@ -25032,7 +25034,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/l</div>
+<br/>ZL</div>
 <div><div class="alg">[U] {U,BL} S' U' S' U S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -25199,7 +25201,7 @@
 </path>
 </g>
 </svg>
-<br/>6R/l+</div>
+<br/>ZL+</div>
 <div><div class="alg">[U] {B,U} Rw' R U' R U Rw R2'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -25366,12 +25368,12 @@
 </path>
 </g>
 </svg>
-<br/>6R/l-</div>
+<br/>ZL-</div>
 <div><div class="alg">[U] {U,BL} S U' H'</div></div></td>
   </tr>
   </table>
-  <div id="olp_6L_even"></div>
-<label for="cb_19">  <h2>OLP 6L - even</h2>
+  <div id="olp_S_even"></div>
+<label for="cb_19">  <h2>OLP S - even</h2>
 </label><input type="checkbox" checked id="cb_19" />
   <table>
   <tr>
@@ -25542,7 +25544,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/s</div>
+<br/>SS</div>
 <div><div class="alg">H S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -25709,7 +25711,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/s+</div>
+<br/>SS+</div>
 <div><div class="alg">{R,BR} R' U' Rw' R U' R U Rw R' U</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -25876,7 +25878,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/s-</div>
+<br/>SS-</div>
 <div><div class="alg">{L,U} R U Rw R' U R' U' Rw' R U'</div></div></td>
   </tr>
   <tr>
@@ -26045,7 +26047,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/c</div>
+<br/>SC</div>
 <div><div class="alg">{B,U} U' R' D R' U R D' R</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -26212,7 +26214,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/c+</div>
+<br/>SC+</div>
 <div><div class="alg">H'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -26379,7 +26381,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/c-</div>
+<br/>SC-</div>
 <div><div class="alg">{B,U} U' R U R D R' U' R D' R' U R'</div></div></td>
   </tr>
   <tr>
@@ -26548,7 +26550,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/a</div>
+<br/>SA</div>
 <div><div class="alg">{B,BL} U R D' R U' R' D R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -26715,7 +26717,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/a+</div>
+<br/>SA+</div>
 <div><div class="alg">{B,BL} U R' U' R' D' R U R' D R U' R</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -26882,12 +26884,12 @@
 </path>
 </g>
 </svg>
-<br/>6L/a-</div>
+<br/>SA-</div>
 <div><div class="alg">{U,BL} S'</div></div></td>
   </tr>
   </table>
-  <div id="olp_6L_odd"></div>
-<label for="cb_20">  <h2>OLP 6L - odd</h2>
+  <div id="olp_S_odd"></div>
+<label for="cb_20">  <h2>OLP S - odd</h2>
 </label><input type="checkbox" checked id="cb_20" />
   <table>
   <tr>
@@ -27058,7 +27060,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/b</div>
+<br/>SB</div>
 <div><div class="alg">{B,BR} R' U' R D' R U' R' D R' U' R</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -27225,7 +27227,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/b+</div>
+<br/>SB+</div>
 <div><div class="alg">{R,BR} U Rw' U' R U Rw R2' U' R</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -27392,7 +27394,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/b-</div>
+<br/>SB-</div>
 <div><div class="alg">{L,U} U' Rw U R' U' Rw' R' U R'</div></div></td>
   </tr>
   <tr>
@@ -27561,7 +27563,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/r</div>
+<br/>SR</div>
 <div><div class="alg">[U] {B,BL} R D R' U R D' R U' R</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -27728,7 +27730,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/r+</div>
+<br/>SR+</div>
 <div><div class="alg">[U] {B,BL} R D R' U R D R U' R' D R2</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -27895,7 +27897,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/r-</div>
+<br/>SR-</div>
 <div><div class="alg">[U] L BLw' U' S U BLw L' </div>
 <div class="alg">[U] R U R' L R L' U' R B' R B</div>
 <div class="alg">{L,U} U' D R' U R D' {L,D} R' U R U'</div></div></td>
@@ -28066,7 +28068,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/l</div>
+<br/>SL</div>
 <div><div class="alg">[U'] {B,U} R' D' R U' R' D R2 U R'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -28233,7 +28235,7 @@
 </path>
 </g>
 </svg>
-<br/>6L/l+</div>
+<br/>SL+</div>
 <div><div class="alg">[U'] {U,BL} L BLw' U S' U' BLw L' </div>
 <div class="alg">[U'] {U,BL} R' U' R B' R' B U R' L R' L'</div>
 <div class="alg">{R,BR} U D' R U' R' D {BR,F} R B' R' B</div></div></td>
@@ -28402,12 +28404,12 @@
 </path>
 </g>
 </svg>
-<br/>6L/l-</div>
+<br/>SL-</div>
 <div><div class="alg">[U'] {B,U} R' D' R U' R' D' R' U R D' R</div></div></td>
   </tr>
   </table>
-  <div id="olp_7_even"></div>
-<label for="cb_21">  <h2>OLP 7 - even</h2>
+  <div id="olp_X_even"></div>
+<label for="cb_21">  <h2>OLP X - even</h2>
 </label><input type="checkbox" checked id="cb_21" />
   <table>
   <tr>
@@ -28576,7 +28578,7 @@
 </path>
 </g>
 </svg>
-<br/>7/s</div>
+<br/>XS</div>
 <div><div class="alg">S U S U S' U' H</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -28743,7 +28745,7 @@
 </path>
 </g>
 </svg>
-<br/>7/s+</div>
+<br/>XS+</div>
 <div><div class="alg">[U'] S' U' S' U' S U S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -28910,12 +28912,12 @@
 </path>
 </g>
 </svg>
-<br/>7/s-</div>
+<br/>XS-</div>
 <div><div class="alg">[U] S U S U S' U' S</div></div></td>
   </tr>
   </table>
-  <div id="olp_7_odd"></div>
-<label for="cb_22">  <h2>OLP 7 - odd</h2>
+  <div id="olp_X_odd"></div>
+<label for="cb_22">  <h2>OLP X - odd</h2>
 </label><input type="checkbox" checked id="cb_22" />
   <table>
   <tr>
@@ -29086,7 +29088,7 @@
 </path>
 </g>
 </svg>
-<br/>7/b</div>
+<br/>XB</div>
 <div><div class="alg">H' U S U' S' U' S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -29253,7 +29255,7 @@
 </path>
 </g>
 </svg>
-<br/>7/b+</div>
+<br/>XB+</div>
 <div><div class="alg">[U'] S' U S U' S' U' S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -29420,12 +29422,12 @@
 </path>
 </g>
 </svg>
-<br/>7/b-</div>
+<br/>XB-</div>
 <div><div class="alg">[U] S U' S' U S U S</div></div></td>
   </tr>
   </table>
-  <div id="olp_8_even"></div>
-<label for="cb_23">  <h2>OLP 8 - even</h2>
+  <div id="olp_Y_even"></div>
+<label for="cb_23">  <h2>OLP Y - even</h2>
 </label><input type="checkbox" checked id="cb_23" />
   <table>
   <tr>
@@ -29594,7 +29596,7 @@
 </path>
 </g>
 </svg>
-<br/>8/s</div>
+<br/>YS</div>
 <div><div class="alg">[U'] S' U H U H</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -29761,7 +29763,7 @@
 </path>
 </g>
 </svg>
-<br/>8/s+</div>
+<br/>YS+</div>
 <div><div class="alg">{U,BL} S' U' S U' S</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -29928,12 +29930,12 @@
 </path>
 </g>
 </svg>
-<br/>8/s-</div>
+<br/>YS-</div>
 <div><div class="alg">{U,BR} S U S' U S'</div></div></td>
   </tr>
   </table>
-  <div id="olp_8_odd"></div>
-<label for="cb_24">  <h2>OLP 8 - odd</h2>
+  <div id="olp_Y_odd"></div>
+<label for="cb_24">  <h2>OLP Y - odd</h2>
 </label><input type="checkbox" checked id="cb_24" />
   <table>
   <tr>
@@ -30104,7 +30106,7 @@
 </path>
 </g>
 </svg>
-<br/>8/b</div>
+<br/>YB</div>
 <div><div class="alg">[U'] {U,BL} S' U S' U H</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -30271,7 +30273,7 @@
 </path>
 </g>
 </svg>
-<br/>8/b+</div>
+<br/>YB+</div>
 <div><div class="alg">{U,BL} S U' S U' S'</div></div></td>
 <td>
 <div class="case-label"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.92 301.94" stroke="#000" id="svg">
@@ -30438,6 +30440,6 @@
 </path>
 </g>
 </svg>
-<br/>8/b-</div>
+<br/>YB-</div>
 <div><div class="alg">{U,BR} S' U S' U S</div></div></td>
 </body></html>
